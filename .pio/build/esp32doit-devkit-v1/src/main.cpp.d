@@ -130,4 +130,5 @@
  C:/Users/acer/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_spi_flash_counters.h \
  C:/Users/acer/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/soc/esp32/spiram.h \
  src/ultrasonic.h src/pH_sensor.h src/motor.h src/thermocouple.h \
- .pio/libdeps/esp32doit-devkit-v1/MAX6675\ library/max6675.h
+ .pio/libdeps/esp32doit-devkit-v1/MAX6675\ library/max6675.h \
+ src/tds_sensor.h

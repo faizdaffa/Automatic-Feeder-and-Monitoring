@@ -1,11 +1,11 @@
 #include <Arduino.h>
 
-const int trigPin = 5;
-const int echoPin = 17;
+const int trigPin = 17;
+const int echoPin = 5;
 long duration;
 int distance;
 
-void ultrasonic_setup()
+void ultrasonic_innit()
 {
     pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
     pinMode(echoPin, INPUT);  // Sets the echoPin as an Input

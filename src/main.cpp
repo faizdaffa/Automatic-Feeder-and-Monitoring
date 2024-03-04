@@ -3,29 +3,25 @@
 #include <pH_sensor.h>
 #include <motor.h>
 #include <thermocouple.h>
-#include <tds_sensor.h>
+#include <tds_sensor copy.h>
+// #include <tds_sensor.h>
 
 void setup()
 {
   Serial.begin(9600);
-  // ultrasonic_innit();
-  // tds_innit();
+  ph_innit();
+  tds_innit();
+  ultrasonic_innit();
   // motor_innit();
-  Serial.println("Start");
-  for (uint32_t i = 0; i < 1000; i++)
-  {
-    ph_voltage(read_ph_analog_avg(ph_pin, 1000));
-  }
-  Serial.println("End");
 }
 
 void loop()
 {
-  // ph_voltage(read_ph_analog_avg(ph_pin, 1000));
-  // read_distance();
-  // read_ph();
+  ph_value(read_ph_analog_avg(ph_pin, 1000));
+  tds_value(read_tds_analog_avg(tds_pin, 1000));
+  read_thermocouple();
+  read_distance();
   // clockwise();
-  // read_thermocouple();
-  // read_tds();
-  // delay(1000);
+  Serial.println("pH: " + String(ph) + " || TDS: " + String(tds) + " || T: " + String(T) + " || Jarak: " + String(distance));
+  delay(500);
 }

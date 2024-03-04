@@ -1,4 +1,10 @@
+float ph;
 int ph_pin = 27;
+
+void ph_innit()
+{
+    pinMode(ph_pin, INPUT);
+}
 
 void read_ph_analog(int pin)
 {
@@ -14,12 +20,12 @@ float read_ph_analog_avg(int pin, uint32_t sample)
         val += analogRead(pin);
     }
     val = val / sample;
-    Serial.println(val);
+    // Serial.println(val);
     return val;
 }
 
-void ph_voltage(float val)
+void ph_value(float val)
 {
-    float voltage = 18.996592991130186 - (0.0041640039184704224 * val);
-    // Serial.println(voltage, 4);
+    ph = 18.996592991130186 - (0.0041640039184704224 * val);
+    // Serial.println(ph, 4);
 }

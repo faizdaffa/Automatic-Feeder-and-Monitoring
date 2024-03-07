@@ -1,9 +1,9 @@
 
 #include <Arduino.h>
 
-int enB = 14;
-int in4 = 13;
-int in3 = 12;
+int enB = 23;
+int in4 = 3;
+int in3 = 1;
 int pwm = 255;
 
 void motor_innit()

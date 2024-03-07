@@ -1,5 +1,5 @@
-float ph;
-int ph_pin = 27;
+float ph = 0;
+int ph_pin = 36;
 
 void ph_innit()
 {

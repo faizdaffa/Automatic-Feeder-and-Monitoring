@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#define TdsSensorPin 26
+#define TdsSensorPin 39
 #define VREF 3.3  // analog reference voltage(Volt) of the ADC
 #define SCOUNT 30 // sum of sample point
 

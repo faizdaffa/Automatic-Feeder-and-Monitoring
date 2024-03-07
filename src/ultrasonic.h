@@ -1,9 +1,9 @@
 #include <Arduino.h>
 
 const int trigPin = 17;
-const int echoPin = 5;
+const int echoPin = 16;
 long duration;
-int distance;
+int pellets;
 
 void ultrasonic_innit()
 {
@@ -23,7 +23,7 @@ void read_distance()
     // Reads the echoPin, returns the sound wave travel time in microseconds
     duration = pulseIn(echoPin, HIGH);
     // Calculating the distance
-    distance = duration * 0.034 / 2;
+    pellets = duration * 0.034 / 2;
     // Prints the distance on the Serial Monitor
     // Serial.println("Distance: " + String(distance));
 }

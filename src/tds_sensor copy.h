@@ -1,6 +1,6 @@
 #include <Arduino.h>
-float tds;
-int tds_pin = 26;
+float tds = 0;
+int tds_pin = 39;
 
 void tds_innit()
 {

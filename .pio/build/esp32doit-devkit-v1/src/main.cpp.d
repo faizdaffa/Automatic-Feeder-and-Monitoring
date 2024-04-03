@@ -129,9 +129,9 @@
  C:/Users/acer/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_spi_flash.h \
  C:/Users/acer/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_spi_flash_counters.h \
  C:/Users/acer/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/soc/esp32/spiram.h \
- src/ultrasonic.h src/pH_sensor.h src/motor.h src/thermocouple.h \
+ src/ultrasonic.h src/pH_sensor.h src/thermocouple.h \
  .pio/libdeps/esp32doit-devkit-v1/MAX6675\ library/max6675.h \
- src/tds_sensor\ copy.h \
+ src/tds_sensor\ copy.h src/send_data.h \
  C:/Users/acer/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/Wifi.h \
  C:/Users/acer/.platformio/packages/framework-arduinoespressif32/cores/esp32/Print.h \
  C:/Users/acer/.platformio/packages/framework-arduinoespressif32/cores/esp32/IPv6Address.h \
@@ -232,4 +232,5 @@
  C:/Users/acer/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/mbedtls/port/include/aes_alt.h \
  C:/Users/acer/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/mbedtls/port/include/aes/esp_aes.h \
  C:/Users/acer/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/aes_types.h \
- C:/Users/acer/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/mbedtls/mbedtls/include/mbedtls/error.h
+ C:/Users/acer/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/mbedtls/mbedtls/include/mbedtls/error.h \
+ src/motor.h

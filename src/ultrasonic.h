@@ -25,5 +25,5 @@ void read_distance()
     // Calculating the distance
     pellets = duration * 0.034 / 2;
     // Prints the distance on the Serial Monitor
-    // Serial.println("Distance: " + String(distance));
+    // Serial.println("Distance: " + String(pellets));
 }
